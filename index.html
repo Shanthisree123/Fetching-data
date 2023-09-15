@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+    <script src="script.js"></script>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #a1beee;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            font-size: 18px;
+        }
+        </style>
+</head>
+<body style="background-color: rgb(161, 182, 239);"><center>
+    <h1>User Form</h1>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required><br><br>
+
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" name="skills" required><br><br>
+
+        <label for="experience">Experience:</label>
+        <input type="text" id="experience" name="experience" required><br><br>
+
+        <label for="education">Education:</label>
+        <input type="text" id="education" name="education" required><br>
+        <br>
+
+        <button type="button" onclick="submitForm()" style="background-color: black; color: aliceblue;" >Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+    <br>
+
+    <h1>User Data</h1>
+    <table id="userData">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Profession</th>
+                <th>Skills</th>
+                <th>Experience</th>
+                <th>Education</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody id="userDataBody">
+            <!-- User data will be added here -->
+        </tbody>
+    </table>
+</center>
+</body>
+</html>
